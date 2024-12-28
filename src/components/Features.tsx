@@ -1,18 +1,28 @@
-import { Play, FileText, Download, Clock } from 'lucide-react'
+import React from 'react'
+import { Play, Clock } from 'lucide-react'
 
-const VideoSection = ({ videoId, title }: { videoId: string; title: string }) => (
-  <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-xl">
-    <iframe
-      src={`https://www.youtube.com/embed/${videoId}`}
-      title={title}
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-      className="absolute top-0 left-0 w-full h-full"
-    />
-  </div>
-)
+interface VideoSectionProps {
+  url: string;
+  title: string;
+}
 
-export const Features = () => {
+const VideoSection: React.FC<VideoSectionProps> = ({ url, title }) => {
+  const embedUrl = url.replace('watch?v=', 'embed/').replace('youtu.be/', 'youtube.com/embed/').split('&')[0];
+
+  return (
+    <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-xl">
+      <iframe
+        src={embedUrl}
+        title={title}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        className="absolute top-0 left-0 w-full h-full"
+      />
+    </div>
+  );
+};
+
+export const Features: React.FC = () => {
   return (
     <div className="bg-[#0d1117] py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -41,8 +51,8 @@ export const Features = () => {
           </div>
           <div className="relative mt-12 lg:mt-0">
             <VideoSection 
-              videoId="dQw4w9WgXcQ"
-              title="Course Preview"
+              url="https://youtu.be/fZmQ_aPXJAM?si=ynStwBwANtnyL4tX"
+              title="The Best Tech Jobs for 2025: High Demand & High Pay"
             />
           </div>
         </div>
@@ -51,8 +61,8 @@ export const Features = () => {
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           <div className="order-2 lg:order-1">
             <VideoSection 
-              videoId="dQw4w9WgXcQ"
-              title="Lesson Preview"
+              url="https://youtu.be/fZmQ_aPXJAM?si=ynStwBwANtnyL4tX"
+              title="The Best Tech Jobs for 2025: High Demand & High Pay"
             />
           </div>
           <div className="order-1 lg:order-2">
