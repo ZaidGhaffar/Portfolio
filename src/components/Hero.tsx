@@ -10,16 +10,16 @@ export const Hero = () => {
             you're looking for
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-white/70">
-            With GitHub code search, your code—and
+            Super Excited to have a conversation with you
             <br />
-            the world's—is at your fingertips.
+             Just fill the Contact form and I will get back to you
           </p>
           <div className="mt-8 flex justify-center gap-4">
             <button className="px-6 py-3 bg-white rounded-md text-[#1c1c3b] font-semibold hover:bg-white/90">
               Try it now
             </button>
             <button className="px-6 py-3 bg-transparent border border-white/30 rounded-md text-white font-semibold hover:border-white/50">
-              Watch video
+              fill form
             </button>
           </div>
         </div>

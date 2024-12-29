@@ -39,19 +39,19 @@ export const Features: React.FC = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Play className="text-purple-500" size={20} />
-              <span className="text-purple-400">A clear path to master coding</span>
+              <span className="text-purple-400">Let's master cold calling with AI</span>
             </div>
             <h2 className="text-4xl font-bold text-white mb-6">
-              Perfectly Structured Courses
+              Today at WintaX Technologies
             </h2>
             <p className="text-gray-400 text-xl leading-relaxed mb-8">
-              No more jumping between random YouTube tutorials. Follow a clear, logical path
-              designed to build your skills step-by-step.
+            We’ve built an AI-powered phone calling assistant that takes care of your outbound & inbound calls—even cold calls! 
+            Our smart assistant talks to your customers in real time 
             </p>
           </div>
           <div className="relative mt-12 lg:mt-0">
             <VideoSection 
-              url="https://youtu.be/fZmQ_aPXJAM?si=ynStwBwANtnyL4tX"
+              url="https://youtu.be/1Zr5PcAzOks?si=8Z84uWsiAiO0aMnD"
               title="The Best Tech Jobs for 2025: High Demand & High Pay"
             />
           </div>
@@ -61,7 +61,7 @@ export const Features: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           <div className="order-2 lg:order-1">
             <VideoSection 
-              url="https://youtu.be/fZmQ_aPXJAM?si=ynStwBwANtnyL4tX"
+              url="https://youtu.be/sy9c7fqoPlM?si=ZBAqRzvrT65y0HRg"
               title="The Best Tech Jobs for 2025: High Demand & High Pay"
             />
           </div>
@@ -71,14 +71,84 @@ export const Features: React.FC = () => {
               <span className="text-purple-400">Straightforward and to the point</span>
             </div>
             <h2 className="text-4xl font-bold text-white mb-6">
-              Clear and Bite-Sized Lessons
+              Full Stack AI Powered Calculator 
             </h2>
             <p className="text-gray-400 text-xl leading-relaxed mb-8">
-              Each lesson is focused and fluff-free, so you can make real progress—even with a busy
-              schedule. Get exactly what you need without wasting a minute.
+              Built with AI magic and full-stack technology, this calculator does more than math—it understands you! 
+              It’s like having a personal tutor in your pocket.
             </p>
           </div>
         </div>
+
+        {/* Third Feature */}
+        <div className="grid lg:grid-cols-2 gap-20 items-center mb-40 mt-40">
+          <div>
+            <div className="flex items-center gap-2 mb-4">
+              <Play className="text-purple-500" size={20} />
+              <span className="text-purple-400">Let's master your data in seconds</span>
+            </div>
+            <h2 className="text-4xl font-bold text-white mb-6">
+              Building RAG Over Excel Files
+            </h2>
+            <p className="text-gray-400 text-xl leading-relaxed mb-8">
+              Our RAG (Retrieval-Augmented Generation) system makes working with Excel files smarter and easier!
+              It’s like having a data scientist on your team.
+            </p>
+          </div>
+          <div className="relative mt-12 lg:mt-0">
+            <VideoSection 
+              url="https://youtu.be/-5_--b6V40M?si=PHgooa2Qm_veHmwy "
+              title="The Best Tech Jobs for 2025: High Demand & High Pay"
+            />
+          </div>
+        </div>
+
+        {/* 4th Feature */}
+        <div className="grid lg:grid-cols-2 gap-20 items-center">
+          <div className="order-2 lg:order-1">
+            <VideoSection 
+              url="https://youtu.be/DQ-NFVj_JhE?si=8APoMBCKlb8TDjnZ"
+              title="The Best Tech Jobs for 2025: High Demand & High Pay"
+            />
+          </div>
+          <div className="order-1 lg:order-2">
+            <div className="flex items-center gap-2 mb-4">
+              <Clock className="text-purple-500" size={20} />
+              <span className="text-purple-400">Straightforward and to the point</span>
+            </div>
+            <h2 className="text-4xl font-bold text-white mb-6">
+              Intelligant Chatbot With ML Models
+            </h2>
+            <p className="text-gray-400 text-xl leading-relaxed mb-8">
+            A full-stack AI bot that learns fast and responds smartly—trained on your data in seconds! 
+            Custom AI Models – Train it on your data instantly!
+            </p>
+          </div>
+        </div>
+
+        {/* 5th Feature */}
+        <div className="grid lg:grid-cols-2 gap-20 items-center mb-40 mt-40">
+          <div>
+            <div className="flex items-center gap-2 mb-4">
+              <Play className="text-purple-500" size={20} />
+              <span className="text-purple-400">Let's master your data in seconds</span>
+            </div>
+            <h2 className="text-4xl font-bold text-white mb-6">
+              Object Detection Pipeline
+            </h2>
+            <p className="text-gray-400 text-xl leading-relaxed mb-8">
+            A TensorFlow-powered object detection pipeline that trains on any object images in real time—get your model ready in minutes!
+            Upload images and let AI do the rest!
+            </p>
+          </div>
+          <div className="relative mt-12 lg:mt-0">
+            <VideoSection 
+              url="https://youtu.be/g66DXhLtoeA?si=nYLviT9OAhHfedsx"
+              title="The Best Tech Jobs for 2025: High Demand & High Pay"
+            />
+          </div>
+        </div>
+
       </div>
     </div>
   )
