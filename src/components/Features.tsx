@@ -45,7 +45,7 @@ export const Features: React.FC = () => {
               Today at WintaX Technologies
             </h2>
             <p className="text-gray-400 text-xl leading-relaxed mb-8">
-            We’ve built an AI-powered phone calling assistant that takes care of your outbound & inbound calls—even cold calls! 
+            We are builing an AI-powered phone calling assistant that takes care of your outbound & inbound calls—even cold calls! 
             Our smart assistant talks to your customers in real time 
             </p>
           </div>
